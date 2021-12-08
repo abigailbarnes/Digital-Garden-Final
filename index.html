@@ -1,0 +1,385 @@
+<style>
+  :root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark-blue: #063970;
+  }
+
+  .header {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+  }
+
+  .frame {
+    background-color: var(--white);
+    width: 900px;
+    height: 600px;
+    position: absolute;
+  }
+
+  /*BUTTONS*/
+  .button {
+    background-color: var(--white);
+    border: 2px solid var(--black);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+  }
+
+
+  /* Popup container */
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 425px;
+    background-color: var(--white);
+    color: var(--black);
+    text-align: center;
+    border-radius: 6px;
+    /*padding: 8px 0;*/
+    position: absolute;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+  }
+
+
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+
+  .popup .hide {
+    visibility: hidden;
+  }
+
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+
+
+<script>
+  function myFunctionNull() {
+    var popup = document.getElementById("popupnull");
+    popup.classList.toggle("show");
+  }
+
+  function myFunctionRock() {
+    var popup = document.getElementById("popupRock");
+    popup.classList.toggle("show");
+  }
+
+  function myFunctionPop() {
+    var popup = document.getElementById("popupPop");
+    popup.classList.toggle("show");
+  }
+
+  function myFunctionFolk() {
+    var popup = document.getElementById("popupFolk");
+    popup.classList.toggle("show");
+  }
+
+  function myFunctionClassical() {
+    var popup = document.getElementById("popupClassical");
+    popup.classList.toggle("show");
+  }
+
+  function myFunctionIndie() {
+    var popup = document.getElementById("popupIndie");
+    popup.classList.toggle("show");
+  }
+
+  function myFunctionAlternative() {
+    var popup = document.getElementById("popupAlternative");
+    popup.classList.toggle("show");
+  }
+
+  function myFunctionFunk() {
+    var popup = document.getElementById("popupFunk");
+    popup.classList.toggle("show");
+  }
+
+  function myFunctionGospel() {
+    var popup = document.getElementById("popupGospel");
+    popup.classList.toggle("show");
+  }
+
+  function myFunctionInstrumental() {
+    var popup = document.getElementById("popupInstrumental");
+    popup.classList.toggle("show");
+  }
+
+  function myFunctionPsychedelicRock() {
+    var popup = document.getElementById("popupPsychedelicRock");
+    popup.classList.toggle("show");
+  }
+
+  function myFunctionPopRock() {
+    var popup = document.getElementById("popupPopRock");
+    popup.classList.toggle("show");
+  }
+
+  function myFunctionTrap() {
+    var popup = document.getElementById("popupTrap");
+    popup.classList.toggle("show");
+  }
+</script>
+
+
+
+<div class="frame">
+  <div class="header">
+    Abby's Top Pick from Each Music Genre
+  </div>
+
+  <div class="popup" onclick="myFunctionRock()">
+    <div class="button">Rock</div>
+    <span class="popuptext" id="popupRock">
+      Go All the Way - <a href="https://en.wikipedia.org/wiki/Raspberries_(band)">The Raspberries</a>
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/R5u25XGGo-E"></iframe>
+    </span>
+  </div>
+
+
+  <div class="popup" onclick="myFunctionPop()">
+    <div class="button">Pop</div>
+    <span class="popuptext" id="popupPop">
+      Somebody I Used to Know - <a href="https://en.wikipedia.org/wiki/Gotye">Gotye</a>
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/8UVNT4wvIGY">
+      </iframe>
+    </span>
+  </div>
+
+  <div class="popup" onclick="myFunctionNull()">
+    <div class="button">Jazz</div>
+    <span class="popuptext" id="popupnull">
+      Abby has not found a Top Pick for this genre!
+    </span>
+  </div>
+
+  <div class="popup" onclick="myFunctionFolk()">
+    <div class="button">Folk</div>
+    <span class="popuptext" id="popupFolk">
+      Amsterdam - <a href="https://en.wikipedia.org/wiki/Gregory_Alan_Isakov">Gregory Alan Isakov</a>
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/lz2qpnRB5_E">
+      </iframe>
+    </span>
+  </div>
+
+  <div class="popup" onclick="myFunctionNull()">
+    <div class="button">Blues</div>
+    <span class="popuptext" id="popupnull">
+      Abby has not found a Top Pick for this genre!
+    </span>
+  </div>
+
+
+  <div class="popup" onclick="myFunctionClassical()">
+    <div class="button">Classical</div>
+    <span class="popuptext" id="popupClassical">
+      Clair De Lune - <a href="https://en.wikipedia.org/wiki/Claude_Debussy">Claude Debussy</a>
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/CvFH_6DNRCY">
+      </iframe>
+    </span>
+  </div>
+
+
+  <div class="popup" onclick="myFunctionNull()">
+    <div class="button">Electronic</div>
+    <span class="popuptext" id="popupnull">
+      Abby has not found a Top Pick for this genre!
+    </span>
+  </div>
+
+
+  <div class="popup" onclick="myFunctionNull()">
+    <div class="button">Disco</div>
+    <span class="popuptext" id="popupnull">
+      Abby has not found a Top Pick for this genre!
+    </span>
+  </div>
+
+
+  <div class="popup" onclick="myFunctionIndie()">
+    <div class="button">Indie</div>
+    <span class="popuptext" id="popupIndie">
+      Speaking Terms - <a href="https://en.wikipedia.org/wiki/Snail_Mail_(musician)">Snail Mail</a>
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/GpDWzTuem3o">
+      </iframe>
+    </span>
+  </div>
+
+
+
+  <div class="popup" onclick="myFunctionAlternative()">
+    <div class="button">Alternative</div>
+    <span class="popuptext" id="popupAlternative">
+      Otherside- <a href="https://en.wikipedia.org/wiki/Perfume_Genius">Perfume Genius</a>
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/DD6GnitHHRA">
+      </iframe>
+    </span>
+  </div>
+
+
+
+  <div class="popup" onclick="myFunctionNull()">
+    <div class="button">Soul</div>
+    <span class="popuptext" id="popupnull">
+      Abby has not found a Top Pick for this genre!
+    </span>
+  </div>
+
+  <div class="popup" onclick="myFunctionFunk()">
+    <div class="button">Funk</div>
+    <span class="popuptext" id="popupFunk">
+      Give It All You Got - <a href="https://en.wikipedia.org/wiki/Chuck_Mangione">Chuck Mangione</a>
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/2-OKy-dO48E">
+      </iframe>
+    </span>
+  </div>
+
+  <div class="popup" onclick="myFunctionNull()">
+    <div class="button">Reggae</div>
+    <span class="popuptext" id="popupnull">
+      Abby has not found a Top Pick for this genre!
+    </span>
+  </div>
+
+
+  <div class="popup" onclick="myFunctionNull()">
+    <div class="button">Hardcore</div>
+    <span class="popuptext" id="popupnull">
+      Abby has not found a Top Pick for this genre!
+    </span>
+  </div>
+
+  <div class="popup" onclick="myFunctionNull()">
+    <div class="button">Emo</div>
+    <span class="popuptext" id="popupnull">
+      Abby has not found a Top Pick for this genre!
+    </span>
+  </div>
+
+  <div class="popup" onclick="myFunctionNull()">
+    <div class="button">Ambient</div>
+    <span class="popuptext" id="popupnull">
+      Abby has not found a Top Pick for this genre!
+    </span>
+  </div>
+
+
+
+  <div class="popup" onclick="myFunctionGospel()">
+    <div class="button">Gospel</div>
+    <span class="popuptext" id="popupGospel">
+      Jubilation - <a href="https://en.wikipedia.org/wiki/Harry_Chapin">Harry Chapin</a>
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/Y-IKEgx0NrU">
+      </iframe>
+    </span>
+  </div>
+
+
+  <div class="popup" onclick="myFunctionInstrumental()">
+    <div class="button">Instrumental</div>
+    <span class="popuptext" id="popupInstrumental">
+      Estrelita - <a href="https://en.wikipedia.org/wiki/Manuel_Ponce">Manuel Maria Ponce</a>
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/MRhcBp73O-s">
+      </iframe>
+    </span>
+  </div>
+
+
+  <div class="popup" onclick="myFunctionNull()">
+    <div class="button">Jazz Fusion</div>
+    <span class="popuptext" id="popupnull">
+      Abby has not found a Top Pick for this genre!
+    </span>
+  </div>
+
+
+  <div class="popup" onclick="myFunctionPsychedelicRock()">
+    <div class="button">Psychedelic Rock</div>
+    <span class="popuptext" id="popupPsychedelicRock">
+      Magical Mystery Tour - <a href="https://en.wikipedia.org/wiki/The_Beatles">The Beatles</a>
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/l8WMGBuNaus">
+      </iframe>
+    </span>
+  </div>
+
+
+  <div class="popup" onclick="myFunctionNull()">
+    <div class="button">Synth Pop</div>
+    <span class="popuptext" id="popupnull">
+      Abby has not found a Top Pick for this genre!
+    </span>
+  </div>
+
+
+  <div class="popup" onclick="myFunctionPopRock()">
+    <div class="button">Pop Rock</div>
+    <span class="popuptext" id="popupPopRock">
+      Uptown Girl - <a href="https://en.wikipedia.org/wiki/Billy_Joel">Billy Joel</a>
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/o-0Oect0nVQ">
+      </iframe>
+    </span>
+  </div>
+
+  <div class="popup" onclick="myFunctionNull()">
+    <div class="button">Swing</div>
+    <span class="popuptext" id="popupnull">
+      Abby has not found a Top Pick for this genre!
+    </span>
+  </div>
+
+
+  <div class="popup" onclick="myFunctionTrap()">
+    <div class="button">Trap</div>
+    <span class="popuptext" id="popupTrap">
+      Bound 1 - <a href="https://en.wikipedia.org/wiki/Kanye_West">Kanye</a>
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/7sMMHm_dRwc">
+      </iframe>
+    </span>
+  </div>
+</div>
