@@ -1,2 +1,2 @@
 # Digital-Garden-Final
-◕ ◞ ◕ This project was made using https://netnet.studio
+Internet Art I (2021): Coding music genre-based, interactive digital garden using HTML, CSS, and HTML
